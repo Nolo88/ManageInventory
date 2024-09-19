@@ -49,6 +49,8 @@ namespace ManageInventory
             this.inventoryTableAdapter.Fill(this.inventoryManagementsDBDataSet.Inventory);
             ViewData();
             //The data is automatically sorted by ProductID
+            txtSerchText.Text = "Enter your text here";
+            txtSerchText.ForeColor = Color.Gray;
         }
 
         private void btnAddProduct_Click(object sender, EventArgs e)
